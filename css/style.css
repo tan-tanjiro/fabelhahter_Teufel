@@ -852,3 +852,49 @@ body.dark-theme .theme-toggle {
     background: var(--dark-blue-dark);
     color: var(--text-color-dark);
 }
+/* Темная тема - улучшенные стили для футера и меню */
+body.dark-theme nav {
+    background-color: #0a2d5a !important;  /* Более темный оттенок синего */
+    border-bottom: 1px solid #1a3a6b !important;
+}
+
+body.dark-theme nav a {
+    color: #bbdefb !important;  /* Светло-голубой для текста */
+}
+
+body.dark-theme nav a:hover {
+    background-color: #134b8e !important;  /* Темно-синий при наведении */
+    color: white !important;
+}
+
+body.dark-theme footer {
+    background-color: #0a1a2e !important;  /* Очень темный сине-серый */
+    border-top: 1px solid #1a3a6b !important;
+}
+
+body.dark-theme .footer-container {
+    background-color: transparent !important;
+}
+
+body.dark-theme .footer-contacts h3,
+body.dark-theme .footer-copyright {
+    color: #90caf9 !important;  /* Светло-голубой */
+}
+
+body.dark-theme .social-links a {
+    color: #bbdefb !important;
+}
+
+body.dark-theme .social-links a:hover {
+    color: #e3f2fd !important;
+    text-decoration: underline !important;
+}
+
+/* Дополнительные стили для контраста */
+body.dark-theme {
+    --footer-bg: #0a1a2e;
+    --nav-bg: #0a2d5a;
+    --border-dark: #1a3a6b;
+    --text-light: #e0e0e0;
+    --accent-light: #90caf9;
+}
