@@ -21,3 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll();
 });
+// Переключение темы
+function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+    localStorage.setItem('darkTheme', document.body.classList.contains('dark-theme'));
+}
+
+// Проверка сохраненной темы при загрузке
+if (localStorage.getItem('darkTheme') === 'true') {
+    document.body.classList.add('dark-theme');
+}
