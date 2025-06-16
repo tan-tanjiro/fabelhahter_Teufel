@@ -786,3 +786,68 @@ footer {
         min-width: 100%;
     }
 }
+/* Темная тема */
+:root {
+    --primary-color-dark: #121212;
+    --secondary-color-dark: #1e1e1e;
+    --accent-color-dark: #2a2a2a;
+    --text-color-dark: #e0e0e0;
+    --dark-blue-dark: #64b5f6;
+}
+
+body.dark-theme {
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-theme header {
+    background-color: var(--secondary-color-dark);
+}
+
+.dark-theme nav {
+    background-color: #0d47a1;
+}
+
+.dark-theme .content,
+.dark-theme .intro,
+.dark-theme .welcome-message,
+.dark-theme .benefit-card,
+.dark-theme .member-section,
+.dark-theme .complaint-card {
+    background-color: var(--secondary-color-dark);
+    color: var(--text-color-dark);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme h1, 
+.dark-theme h2, 
+.dark-theme h3 {
+    color: var(--dark-blue-dark);
+}
+
+.dark-theme nav a:hover {
+    background-color: #1976d2;
+}
+
+.dark-theme .rules-list li::before {
+    color: var(--dark-blue-dark);
+}
+
+/* Кнопка переключения темы */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: var(--dark-blue);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.dark-theme .theme-toggle {
+    background: var(--dark-blue-dark);
+    color: var(--text-color-dark);
+}
