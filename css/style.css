@@ -796,41 +796,41 @@ footer {
 }
 
 body.dark-theme {
-    background-color: var(--primary-color-dark);
-    color: var(--text-color-dark);
+    background-color: var(--primary-color-dark) !important;
+    color: var(--text-color-dark) !important;
 }
 
-.dark-theme header {
-    background-color: var(--secondary-color-dark);
+body.dark-theme header {
+    background-color: var(--secondary-color-dark) !important;
 }
 
-.dark-theme nav {
-    background-color: #0d47a1;
+body.dark-theme nav {
+    background-color: #0d47a1 !important;
 }
 
-.dark-theme .content,
-.dark-theme .intro,
-.dark-theme .welcome-message,
-.dark-theme .benefit-card,
-.dark-theme .member-section,
-.dark-theme .complaint-card {
-    background-color: var(--secondary-color-dark);
-    color: var(--text-color-dark);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+body.dark-theme .content,
+body.dark-theme .intro,
+body.dark-theme .welcome-message,
+body.dark-theme .benefit-card,
+body.dark-theme .member-section,
+body.dark-theme .complaint-card {
+    background-color: var(--secondary-color-dark) !important;
+    color: var(--text-color-dark) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
-.dark-theme h1, 
-.dark-theme h2, 
-.dark-theme h3 {
-    color: var(--dark-blue-dark);
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3 {
+    color: var(--dark-blue-dark) !important;
 }
 
-.dark-theme nav a:hover {
-    background-color: #1976d2;
+body.dark-theme nav a:hover {
+    background-color: #1976d2 !important;
 }
 
-.dark-theme .rules-list li::before {
-    color: var(--dark-blue-dark);
+body.dark-theme .rules-list li::before {
+    color: var(--dark-blue-dark) !important;
 }
 
 /* Кнопка переключения темы */
@@ -845,9 +845,10 @@ body.dark-theme {
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000;
+    font-size: 1.2rem;
 }
 
-.dark-theme .theme-toggle {
+body.dark-theme .theme-toggle {
     background: var(--dark-blue-dark);
     color: var(--text-color-dark);
 }
