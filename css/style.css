@@ -458,22 +458,60 @@ footer {
 
 @media (max-width: 768px) {
     .banner {
-        height: 250px;
-        margin-top: 100px;
+        height: 300px;
+        margin-top: 0;
+        background-position: center;
+        background-size: cover;
     }
     
     .logo-container {
-        width: 150px;
-        height: 150px;
+        top: auto;
+        bottom: -50px;
+        width: 120px;
+        height: 120px;
+        transform: translateX(-50%) translateY(0);
+    }
+    
+    nav {
+        margin-top: 50px; 
+        padding: 1rem 0;
+        background-color: var(--dark-blue);
     }
     
     nav ul {
         flex-direction: column;
         align-items: center;
+        gap: 0.5rem;
     }
     
     nav li {
-        margin: 0.5rem 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        padding: 0.8rem;
+        border-radius: 0;
+        font-size: 1.1rem;
+        background-color: transparent;
+    }
+    
+    nav a:hover {
+        background-color: var(--accent-color);
+    }
+    
+    .cta-button {
+        background-color: var(--accent-color);
+        margin: 0.5rem auto;
+        padding: 0.8rem 1.5rem;
+        display: inline-block;
+    }
+    
+    .welcome-image {
+        margin: 1.5rem auto;
+        max-width: 100%;
     }
     
     .message-container {
@@ -503,6 +541,18 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+    header {
+        padding-bottom: 20px;
+    }
+    
+    nav {
+        padding: 0;
+    }
+    
+    nav ul {
+        padding: 0;
     }
 }
 
