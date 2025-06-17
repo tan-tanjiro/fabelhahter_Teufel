@@ -458,26 +458,19 @@ footer {
 
 @media (max-width: 768px) {
     .banner {
-    height: 0vh;
-    min-height: 300px;
-    max-height: 400px;
-    margin-top: 0;
-    padding-top: 0;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    position: relative;
-}
-    
+        height: 100vh; 
+        min-height: 0px; 
+        max-height: 600px; 
+        margin-top: 0;
+        padding-top: 0;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
     .logo-container {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translateX(-50%) translateY(0);
-    width: 120px;
-    height: 120px;
-    z-index: 2;
-}
+        width: 50px;
+        height: 50px;
+    }
     
     nav ul {
         flex-direction: column;
@@ -1036,14 +1029,14 @@ body.dark-theme img[src="image.png"] {
 
 @media (max-width: 768px) {
     .banner {
-        height: 250px;
+        height: 107px;
         margin-top: 0;
     }
     
     .logo-container {
-        top: 125px;
-        width: 150px;
-        height: 150px;
+        top: 40px;
+        width: 90px;
+        height: 90px;
     }
     
     header {
