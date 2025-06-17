@@ -1057,3 +1057,12 @@ body.dark-theme img[src="image.png"] {
         margin-top: 0;
     }
 }
+
+@media (min-width: 769px) {
+    nav ul {
+        flex-direction: row !important;
+    }
+    nav li {
+        width: auto !important;
+    }
+}
