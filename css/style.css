@@ -458,7 +458,7 @@ footer {
 
 @media (max-width: 768px) {
     .banner {
-    height: 60vh;
+    height: 0vh;
     min-height: 300px;
     max-height: 400px;
     margin-top: 0;
