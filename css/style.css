@@ -1018,3 +1018,6 @@ body.dark-theme .contact-card {
 body.dark-theme .contact-avatar {
     border-color: #64b5f6 !important;
 }
+body.dark-theme img[src="image.png"] {
+    filter: brightness(0) invert(1);
+}
