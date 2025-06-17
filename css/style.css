@@ -1021,6 +1021,7 @@ body.dark-theme .contact-avatar {
 body.dark-theme img[src="image.png"] {
     filter: brightness(0) invert(1);
 }
+
 @media (max-width: 768px) {
     .banner {
         height: 250px;
