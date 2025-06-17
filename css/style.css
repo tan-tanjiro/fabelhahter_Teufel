@@ -458,7 +458,7 @@ footer {
 
 @media (max-width: 768px) {
     .banner {
-        height: 100vh; 
+        height: 0vh; 
         min-height: 0px; 
         max-height: 600px; 
         margin-top: 0;
@@ -1029,9 +1029,10 @@ body.dark-theme img[src="image.png"] {
 
 @media (max-width: 768px) {
     .banner {
-        height: 124px;
+        height: 125px;
         margin-top: 0;
     }
+    
     .logo-container {
         top: 50px;
         width: 85px;
@@ -1044,5 +1045,75 @@ body.dark-theme img[src="image.png"] {
     
     nav {
         margin-top: 0;
+    }
+}
+
+.compact-nav {
+    display: none;
+    width: 100%;
+    margin: 0 auto 1rem;
+}
+
+.compact-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.compact-nav li {
+    margin: 0;
+}
+
+.compact-nav a {
+    display: block;
+    padding: 5px 3px;
+    color: var(--);
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: #1976d2;
+    transition: all 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.compact-nav a:hover {
+    background-color: var(--accent-color);
+}
+
+.compact-nav .cta-button {
+    grid-column: span 4;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 500;
+    padding: 6px;
+    font-size: 0.8rem;
+}
+
+body.dark-theme .compact-nav a {
+    background-color: rgba(30,30,30,0.8);
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .compact-nav a:hover {
+    background-color: var(--accent-color-dark);
+}
+
+body.dark-theme .compact-nav .cta-button {
+    background-color: #3b6594;
+}
+
+@media (max-width: 768px) {
+    nav.desktop-nav {
+        display: none;
+    }
+    
+    .compact-nav {
+        display: block;
     }
 }
