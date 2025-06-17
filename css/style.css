@@ -458,29 +458,38 @@ footer {
 
 @media (max-width: 768px) {
     .banner {
-        height: 100vh;
-        min-height: 400px;
-        max-height: 600px;
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
+        height: 200px;
+        margin-top: 0;
+        background-size: cover;
     }
     
     .logo-container {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+        top: 150px;
     }
-    
     nav ul {
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
     
     nav li {
-        margin: 0.5rem 0;
+        margin: 0.3rem 0;
+        width: 100%;
+        text-align: center;
     }
+    
+    nav a {
+        display: block;
+        padding: 0.8rem;
+    }
+    
+    .cta-button {
+        background-color: var(--accent-color);
+        margin-top: 10px;
+    }
+}
     
     .message-container {
         flex-direction: column;
