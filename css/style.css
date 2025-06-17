@@ -1024,21 +1024,35 @@ body.dark-theme img[src="image.png"] {
 
 @media (max-width: 768px) {
     .banner {
-        height: 250px;
+        height: 300px;
         margin-top: 0;
+        background-position: center;
+        background-size: cover;
     }
     
     .logo-container {
-        top: 125px;
-        width: 150px;
-        height: 150px;
-    }
-    
-    header {
-        padding-top: 0;
+        top: auto;
+        bottom: -50px;
+        width: 120px;
+        height: 120px;
+        transform: translateX(-50%) translateY(0);
     }
     
     nav {
-        margin-top: 0;
+        margin-top: 30px;
+        padding: 1rem 0;
+    }
+    
+    nav ul {
+        gap: 0.3rem;
+    }
+    
+    nav li {
+        margin: 0;
+    }
+    
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
     }
 }
