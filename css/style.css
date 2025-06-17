@@ -458,20 +458,20 @@ footer {
 
 @media (max-width: 768px) {
     .banner {
-    height: 60vh; /* Уменьшаем высоту (было 100vh) */
-    min-height: 300px; /* Уменьшаем минимальную высоту */
-    max-height: 400px; /* Уменьшаем максимальную высоту */
+    height: 60vh;
+    min-height: 300px;
+    max-height: 400px;
     margin-top: 0;
     padding-top: 0;
-    background-size: cover; /* Заменяем contain на cover для лучшего заполнения */
-    background-position: center top; /* Выравниваем по верхнему краю */
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-    position: relative; /* Добавляем для правильного позиционирования лого */
+    position: relative;
 }
     
     .logo-container {
     position: absolute;
-    top: 85%; /* Позиционируем лого в нижней части баннера */
+    top: 85%;
     left: 50%;
     transform: translateX(-50%) translateY(0);
     width: 120px;
