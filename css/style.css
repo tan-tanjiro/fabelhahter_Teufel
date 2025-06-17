@@ -639,7 +639,7 @@ html {
         min-width: 100%;
     }
 }
-/* Исправленный футер */
+
 footer {
     background-color: var(--dark-blue);
     color: white;
@@ -700,7 +700,7 @@ footer {
         padding: 0 1rem;
     }
 }
-/* Стили для страницы ссылок */
+
 .member-section {
     margin-bottom: 3rem;
     padding: 2rem;
@@ -763,7 +763,6 @@ footer {
         max-width: 100%;
     }
 }
-/* Добавьте в конец файла style.css */
 
 .member-image-container {
     display: flex;
@@ -786,7 +785,7 @@ footer {
         min-width: 100%;
     }
 }
-/* Темная тема */
+
 :root {
     --primary-color-dark: #121212;
     --secondary-color-dark: #1e1e1e;
@@ -833,7 +832,6 @@ body.dark-theme .rules-list li::before {
     color: var(--dark-blue-dark) !important;
 }
 
-/* Кнопка переключения темы */
 .theme-toggle {
     position: fixed;
     bottom: 20px;
@@ -852,23 +850,23 @@ body.dark-theme .theme-toggle {
     background: var(--dark-blue-dark);
     color: var(--text-color-dark);
 }
-/* Темная тема - улучшенные стили для футера и меню */
+
 body.dark-theme nav {
-    background-color: #0a2d5a !important;  /* Более темный оттенок синего */
+    background-color: #0a2d5a !important;
     border-bottom: 1px solid #1a3a6b !important;
 }
 
 body.dark-theme nav a {
-    color: #bbdefb !important;  /* Светло-голубой для текста */
+    color: #bbdefb !important;
 }
 
 body.dark-theme nav a:hover {
-    background-color: #134b8e !important;  /* Темно-синий при наведении */
+    background-color: #134b8e !important;
     color: white !important;
 }
 
 body.dark-theme footer {
-    background-color: #0a1a2e !important;  /* Очень темный сине-серый */
+    background-color: #0a1a2e !important;
     border-top: 1px solid #1a3a6b !important;
 }
 
@@ -878,7 +876,7 @@ body.dark-theme .footer-container {
 
 body.dark-theme .footer-contacts h3,
 body.dark-theme .footer-copyright {
-    color: #90caf9 !important;  /* Светло-голубой */
+    color: #90caf9 !important;
 }
 
 body.dark-theme .social-links a {
@@ -890,11 +888,133 @@ body.dark-theme .social-links a:hover {
     text-decoration: underline !important;
 }
 
-/* Дополнительные стили для контраста */
 body.dark-theme {
     --footer-bg: #0a1a2e;
     --nav-bg: #0a2d5a;
     --border-dark: #1a3a6b;
     --text-light: #e0e0e0;
     --accent-light: #90caf9;
+}
+
+body.dark-theme {
+    color: #ffffff !important;
+}
+
+body.dark-theme p,
+body.dark-theme li,
+body.dark-theme span,
+body.dark-theme div:not(.ignore-dark-theme),
+body.dark-theme .subtitle,
+body.dark-theme .poetic-text,
+body.dark-theme .complaint-details,
+body.dark-theme .member-quotes,
+body.dark-theme .final-message,
+body.dark-theme .footnote,
+body.dark-theme .contact-role,
+body.dark-theme .complaint-reason,
+body.dark-theme .complaint-date,
+body.dark-theme .shame-note {
+    color: #ffffff !important;
+}
+
+body.dark-theme a:not(.cta-button) {
+    color: #bbdefb !important;
+}
+
+body.dark-theme .warning {
+    color: #ff8a80 !important;
+}
+
+body.dark-theme .admin-note {
+    color: #ce93d8 !important;
+}
+
+body.dark-theme .cta-button,
+body.dark-theme .contact-link {
+    color: white !important;
+}
+
+body.dark-theme .important-note {
+    background-color: #2a3a4a !important;
+    border-left: 4px solid #64b5f6 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .warning {
+    color: #ff8a80 !important;
+    background-color: transparent !important;
+}
+
+body.dark-theme .admin-note {
+    color: #ce93d8 !important;
+    background-color: transparent !important;
+    font-style: italic;
+}
+
+body.dark-theme input[type="checkbox"] {
+    accent-color: #64b5f6;
+}
+
+body.dark-theme .rules-section a {
+    color: #64b5f6 !important;
+    text-decoration: underline;
+}
+
+body.dark-theme .rules-section h3 {
+    color: #81d4fa !important;
+    border-bottom: 1px solid #3a4a5a !important;
+}
+
+body.dark-theme .complaint-instructions {
+    background-color: #1e2b38 !important;
+    border-left: 4px solid #64b5f6 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .complaint-format {
+    background-color: #1a3a5a !important;
+    border: 1px solid #2a4a6a !important;
+}
+
+body.dark-theme .complaint-criteria {
+    background-color: #2a1a1a !important;
+    border-left: 4px solid #d32f2f !important;
+}
+
+body.dark-theme .shame-notice {
+    background-color: #2a1a1a !important;
+    color: #ffcdd2 !important;
+}
+
+body.dark-theme .shame-quote {
+    color: #ff8a80 !important;
+}
+
+body.dark-theme .shame-list {
+    background-color: #1e2b38 !important;
+    border: 1px solid #3a4a5a !important;
+}
+ 
+body.dark-theme .member-quotes {
+    background-color: #1a3a5a !important;
+    border-left: 4px solid #81d4fa !important;
+}
+
+body.dark-theme .member-quotes li {
+    color: #e0e0e0 !important;
+}
+
+body.dark-theme .footnote {
+    background-color: #1a3a5a !important;
+    color: #bbdefb !important;
+    border-top: 1px solid #3a4a5a !important;
+}
+
+body.dark-theme .contact-card {
+    background-color: #1e2b38 !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3) !important;
+}
+
+body.dark-theme .contact-avatar {
+    border-color: #64b5f6 !important;
 }
