@@ -1029,14 +1029,14 @@ body.dark-theme img[src="image.png"] {
 
 @media (max-width: 768px) {
     .banner {
-        height: 107px;
+        height: 124px;
         margin-top: 0;
     }
     
     .logo-container {
-        top: 40px;
-        width: 90px;
-        height: 90px;
+        top: 50px;
+        width: 85px;
+        height: 85px;
     }
     
     header {
