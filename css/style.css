@@ -458,23 +458,27 @@ footer {
 
 @media (max-width: 768px) {
     .banner {
-        height: 100vh;
-        min-height: 400px;
-        max-height: 600px;
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
+        height: 200px;
+        margin-top: 0;
+        padding-top: 0;
+        background-size: cover;
+        background-position: center;
     }
 
     .logo-container {
-        top: 50vh;
-        transform: translateY(-50%);
+        width: 100px;
+        height: 100px;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
+    nav {
+        margin-top: 0;
+        padding: 10px 0;
+    }
     header {
-        padding-top: 0 !important;
+        padding-top: 0;
     }
 }
     
