@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const originalNav = document.querySelector('nav');
+    if (!originalNav) return;
+    
+    const compactNav = document.createElement('div');
+    compactNav.className = 'compact-nav';
+    
+    const navClone = originalNav.cloneNode(true);
+    compactNav.appendChild(navClone);
+    
+    originalNav.parentNode.insertBefore(compactNav, originalNav);
+    originalNav.classList.add('desktop-nav');
+});
+document.addEventListener('DOMContentLoaded', function() {
     const benefitCards = document.querySelectorAll('.benefit-card');
     benefitCards.forEach((card, index) => {
         card.style.animationDelay = `${index * 0.1}s`;
