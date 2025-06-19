@@ -1117,3 +1117,141 @@ body.dark-theme .compact-nav .cta-button {
         display: block;
     }
 }
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: 999;
+    padding: 80px 20px 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 15px;
+}
+
+.mobile-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.mobile-menu a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+body.dark-theme .mobile-menu {
+    background-color: var(--primary-color-dark);
+}
+
+body.dark-theme .mobile-menu a {
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .mobile-menu a:hover {
+    background-color: var(--dark-blue-dark);
+    color: white;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav.desktop-nav {
+        display: none;
+    }
+    
+    .compact-nav {
+        display: none;
+    }
+    
+    .mobile-menu.active ~ .banner {
+        filter: brightness(0.7) blur(2px);
+        transition: filter 0.4s ease;
+    }
+}
+
+@media (min-width: 769px) {
+    .theme-toggle {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+}
