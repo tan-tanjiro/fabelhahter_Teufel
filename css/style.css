@@ -1255,3 +1255,196 @@ body.dark-theme .mobile-menu a:hover {
         font-size: 1.8rem;
     }
 }
+.celebrities-intro {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.celebrity-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.celebrity-section h2 {
+    color: var(--dark-blue);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.celebrity-section h3 {
+    color: var(--dark-blue);
+    margin: 1.5rem 0 1rem;
+}
+
+.celebrity-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.celebrity-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 4px solid var(--dark-blue);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.celebrity-image:hover {
+    transform: scale(1.03);
+}
+
+.celebrity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.document-download {
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 1rem;
+    background-color: #f0f7ff;
+    border-radius: 8px;
+}
+
+.document-download h3 {
+    margin-top: 0;
+    color: var(--dark-blue);
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--dark-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(25, 118, 210, 0.3);
+}
+
+.download-button:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 118, 210, 0.4);
+}
+
+.upcoming-content {
+    text-align: center;
+    padding: 2rem;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    margin: 3rem 0 1rem;
+}
+
+.upcoming-content h3 {
+    color: var(--dark-blue);
+    margin-top: 0;
+}
+
+.footnote {
+    font-size: 0.9rem;
+    color: #616161;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.footnote p {
+    margin: 0;
+}
+
+body.dark-theme .celebrities-intro {
+    background-color: #1e2b38;
+    color: #e0e0e0;
+}
+
+body.dark-theme .celebrity-section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+body.dark-theme .celebrity-section h2,
+body.dark-theme .celebrity-section h3,
+body.dark-theme .document-download h3,
+body.dark-theme .upcoming-content h3 {
+    color: #90caf9;
+}
+
+body.dark-theme .celebrity-image {
+    border-color: #64b5f6;
+    box-shadow: 0 5px 20px rgba(100, 181, 246, 0.2);
+}
+
+body.dark-theme .document-download {
+    background-color: #1a3a5a;
+    color: #ffffff;
+}
+
+body.dark-theme .download-button {
+    background-color: #64b5f6;
+    color: #121212;
+    box-shadow: 0 3px 10px rgba(100, 181, 246, 0.3);
+}
+
+body.dark-theme .download-button:hover {
+    background-color: #90caf9;
+}
+
+body.dark-theme .upcoming-content {
+    background-color: #0d2b4a;
+    color: #e0e0e0;
+}
+
+body.dark-theme .footnote {
+    background-color: #2a2a2a;
+    color: #bbbbbb;
+}
+
+@media (max-width: 768px) {
+    .celebrity-section {
+        padding: 1.5rem;
+    }
+    
+    .celebrity-image {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .document-download {
+        margin: 2rem 0;
+    }
+    
+    .download-button {
+        padding: 0.7rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .celebrity-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .celebrities-intro,
+    .celebrity-section,
+    .document-download,
+    .upcoming-content {
+        padding: 1.2rem;
+    }
+}
