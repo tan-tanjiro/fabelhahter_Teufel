@@ -73,17 +73,17 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenu.innerHTML = mainNav.outerHTML;
         } else {
             mobileMenu.innerHTML = `
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="about_teufel.html">О нас</a></li>
-                    <li><a href="rules_teufel.html">Правила</a></li>
-                    <li><a href="complaints_teufel.html">Жалобы</a></li>
-                    <li><a href="hall-of-shame_teufel.html">Доска позорников</a></li>
-                    <li><a href="celebrities_teufel.html">Знаменитости</a></li>
-                    <li><a href="links_teufel.html">Мы</a></li>
-                    <li><a href="contacts_teufel.html">Контакты</a></li>
-                    <li><a href="https://vk.com/fabelhafter_teufel" class="cta-button">Подписаться</a></li>
-                </ul>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about_teufel.html">О нас</a></li>
+                <li><a href="rules_teufel.html">Правила</a></li>
+                <li><a href="complaints_teufel.html">Жалобы</a></li>
+                <li><a href="hall-of-shame_teufel.html">Доска позорников</a></li>
+                <li><a href="celebrities_teufel.html">Знаменитости</a></li>
+                <li><a href="links_teufel.html">Мы</a></li>
+                <li><a href="contacts_teufel.html">Контакты</a></li>
+                <li><a href="https://vk.com/fabelhafter_teufel" class="cta-button">Подписаться</a></li>
+            </ul>
             `;
         }
         
