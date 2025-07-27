@@ -1448,3 +1448,16 @@ body.dark-theme .footnote {
         padding: 1.2rem;
     }
 }
+.centered-image-keril {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .centered-image-keril {
+        max-width: 300px;
+    }
+}
