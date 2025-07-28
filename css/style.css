@@ -1461,3 +1461,89 @@ body.dark-theme .footnote {
         max-width: 300px;
     }
 }
+}
+.celebrity-section h2 {
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.centered-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.centered-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.document-download.no-border {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.document-download h3 {
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.download-button {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--dark-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ps-note {
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .centered-image {
+        max-width: 90%;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+}
+
+body.dark-theme .celebrity-section h2,
+body.dark-theme .document-download h3 {
+    color: var(--dark-blue-dark);
+}
+
+body.dark-theme .download-button {
+    background-color: var(--dark-blue-dark);
+}
+
+body.dark-theme .ps-note {
+    color: #bbb;
+}
